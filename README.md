@@ -78,6 +78,9 @@ $ mystars -i
 
 ### Change logs
 
+#### v1.5.2
+- fix cannot import name 'Callable' from 'collections'
+  
 #### v1.5.1
 - Fix error 'IOError: [Errno 32] Broken pipe'
 

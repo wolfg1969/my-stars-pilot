@@ -103,7 +103,7 @@ def main(args=None):
         with StarredDB(MY_STARS_HOME, mode) as db:
             repo_list = []
 
-            for repo in g.iter_starred(sort='created', direction='desc', number=-1):
+            for repo in g.starred(sort='created', direction='desc', number=-1):
 
                 if db.get_latest_repo_full_name() == repo.full_name:
                     break
